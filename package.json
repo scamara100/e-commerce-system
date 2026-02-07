@@ -2,12 +2,27 @@
   "name": "e-commerce-system",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^25.2.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "undici-types": "^7.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scamara100/e-commerce-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/scamara100/e-commerce-system/issues"
+  },
+  "homepage": "https://github.com/scamara100/e-commerce-system#readme"
 }
