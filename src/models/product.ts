@@ -35,8 +35,4 @@ export class Product {
     getPriceWithDiscount() {
         return this.price * (1 - this.discountPercentage)
     }
-
-
-
-
 }

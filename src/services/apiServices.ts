@@ -1,12 +1,11 @@
+import { Product } from "../models/product.ts"
 
-async function handleRequest() {
+export async function handleRequest() {
     try {
         const response = await fetch('https://dummyjson.com/products')
         const data = await response.json()
-        console.log(data)
+        return data.products[0] // Return the first product object
     } catch (e) {
         console.error(e)
     }
-
 }
-handleRequest()
