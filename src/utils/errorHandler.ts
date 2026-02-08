@@ -1,4 +1,3 @@
-import { title } from "node:process"
 import { Product } from "../models/product.ts"
 
 class ValidationError extends Error{
@@ -15,11 +14,6 @@ class PaymentError extends Error{
     }
 }
 
-// interface Order {
-//     productId: string | number,
-//     quantity: number,
-//     price: number,
-// }
 
 function processOrder(product: Product): void{
     if (product.category === ""){
@@ -45,4 +39,4 @@ function handleOrder(product: Product): void {
     }
 }
 
-handleOrder(Product(id: number, title: string, description: string, category: string, price: number, discountPercentage: number, rating: number, stock: number, tags: []): Product
+export { ValidationError, PaymentError, processOrder, handleOrder }
